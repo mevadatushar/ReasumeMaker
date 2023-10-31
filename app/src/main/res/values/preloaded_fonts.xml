@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abril_fatface</item>
+        <item>@font/actor</item>
+        <item>@font/adamina</item>
+        <item>@font/advent_pro_extralight</item>
+        <item>@font/archivo_medium</item>
+        <item>@font/archivo_medium_italic</item>
+        <item>@font/biryani</item>
+        <item>@font/days_one</item>
+        <item>@font/krona_one</item>
+    </array>
+</resources>

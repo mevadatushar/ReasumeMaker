@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResumeDetailsActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#BA3D5AFE"
+        >
+
+        <ImageView
+
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/resume" />
+
+        <TextView
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/biryani"
+            android:text="RESUME"
+            android:textColor="#E9FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:fontFamily="@font/biryani"
+                    android:text="PERSONAL DETAILS"
+                    android:textColor="#BA3D5AFE"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtNAME"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/textinputborder"
+                    android:fontFamily="@font/biryani"
+                    android:gravity="left|center"
+                    android:hint="FULL NAME"
+                    android:inputType="text"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/edtNUMBER"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/textinputborder"
+                    android:fontFamily="@font/biryani"
+                    android:gravity="left|center"
+                    android:hint="PHONE NUMBER"
+                    android:inputType="phone"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/edtEMAIL"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/textinputborder"
+                    android:fontFamily="@font/biryani"
+                    android:gravity="left|center"
+                    android:hint="E-MAIL"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/edtADDRESS"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/textinputborder"
+                    android:fontFamily="@font/biryani"
+                    android:gravity="left|center"
+                    android:hint="ADDRESS"
+                    android:inputType="textPostalAddress"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/biryani"
+                    android:text="LANGUAGE SPEAKS"
+                    android:textColor="#BA3D5AFE"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <CheckBox
+                        android:id="@+id/cbENGLISH"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/biryani"
+                        android:text="ENGLISH" />
+
+                    <CheckBox
+                        android:id="@+id/cbHINDI"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:fontFamily="@font/biryani"
+                        android:text="HINDI" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/biryani"
+                    android:text="GENDER"
+                    android:textColor="#BA3D5AFE"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/rbGENDER">
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/biryani"
+                        android:inputType="textNoSuggestions"
+                        android:text="MALE" />
+
+                    <RadioButton
+
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:fontFamily="@font/biryani"
+                        android:inputType="textNoSuggestions"
+                        android:text="FEMALE" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:fontFamily="@font/biryani"
+                        android:inputType="textNoSuggestions"
+                        android:text="OTHER" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/biryani"
+                    android:text="MARITAL STATUS"
+                    android:textColor="#BA3D5AFE"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/gbMARITAL_STATUS"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/rdMale"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/biryani"
+                        android:inputType="textNoSuggestions"
+                        android:text="MARRIDE" />
+
+                    <RadioButton
+
+                        android:id="@+id/rdFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:fontFamily="@font/biryani"
+                        android:inputType="textNoSuggestions"
+                        android:text="UNMARRIDE" />
+
+                    <RadioButton
+                        android:id="@+id/rdOther"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/biryani"
+                        android:inputType="textNoSuggestions"
+                        android:text="SINGLE" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/biryani"
+                    android:text="HOBBIES"
+                    android:textColor="#BA3D5AFE"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <CheckBox
+                        android:id="@+id/cbSINGING"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/biryani"
+                        android:text="SINGING" />
+
+                    <CheckBox
+                        android:id="@+id/cbDANCING"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:fontFamily="@font/biryani"
+                        android:text="DANCING" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <CheckBox
+                        android:id="@+id/cbREADING"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/biryani"
+                        android:text="READING" />
+
+                    <CheckBox
+                        android:id="@+id/cbTRAVELLING"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="55dp"
+                        android:fontFamily="@font/biryani"
+                        android:text="TRAVELLING" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <CheckBox
+                        android:id="@+id/cbMOVIE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/biryani"
+                        android:text="MOVIE" />
+
+                    <CheckBox
+                        android:id="@+id/cbLEARNING_hobby"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="73dp"
+                        android:fontFamily="@font/biryani"
+                        android:text="LEARNING" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <CheckBox
+                        android:id="@+id/cbPLAYING"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/biryani"
+                        android:text="PLAYING" />
+
+                    <CheckBox
+                        android:id="@+id/cbWRITING"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="58dp"
+                        android:fontFamily="@font/biryani"
+                        android:text="WRITING" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/biryani"
+                    android:text="EDUCATION DETAILS"
+                    android:textColor="#BA3D5AFE"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/textinputborder"
+                        android:fontFamily="@font/biryani"
+                        android:gravity="left|center"
+                        android:hint="Class "
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:layout_width="66dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/textinputborder"
+                        android:fontFamily="@font/biryani"
+                        android:gravity="left|center"
+                        android:hint="10th "
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:layout_width="69dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/textinputborder"
+                        android:fontFamily="@font/biryani"
+                        android:gravity="left|center"
+                        android:hint="12th "
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:layout_width="106dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/textinputborder"
+                        android:fontFamily="@font/biryani"
+                        android:gravity="left|center"
+                        android:hint="Graduation "
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/textinputborder"
+                        android:fontFamily="@font/biryani"
+                        android:gravity="left|center"
+                        android:hint="Year"
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt10th_yr"
+                        android:layout_width="66dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/textinputborder"
+                        android:fontFamily="@font/biryani"
+                        android:gravity="left|center"
+                        android:hint=""
+                        android:inputType="date"
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:id="@+id/edt12th_yr"
+                        android:layout_width="69dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/textinputborder"
+                        android:fontFamily="@font/biryani"
+                        android:gravity="left|center"
+                        android:hint=" "
+                        android:inputType="date"
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:id="@+id/edtGRADUATION_yr"
+                        android:layout_width="106dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/textinputborder"
+                        android:fontFamily="@font/biryani"
+                        android:gravity="left|center"
+                        android:hint=""
+                        android:inputType="date"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edtSSC"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/textinputborder"
+                    android:fontFamily="@font/biryani"
+                    android:gravity="left|center"
+                    android:hint="10th School Name"
+                    android:inputType="text"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/edtHSC"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/textinputborder"
+                    android:fontFamily="@font/biryani"
+                    android:gravity="left|center"
+                    android:hint="12th School Name"
+                    android:inputType="text"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/edtClgName"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/textinputborder"
+                    android:fontFamily="@font/biryani"
+                    android:gravity="left|center"
+                    android:hint="Collage Name"
+                    android:inputType="text"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:fontFamily="@font/biryani"
+                    android:text="APPLYING FOR "
+                    android:textColor="#BA3D5AFE"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtJob"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/textinputborder"
+                    android:fontFamily="@font/biryani"
+                    android:gravity="left|center"
+                    android:hint="ENTER HERE"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:fontFamily="@font/biryani"
+                    android:text="PAST JOB EXPERIENCE"
+                    android:textColor="#BA3D5AFE"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <EditText
+
+                  android:id="@+id/edtPAST_EXP"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/textinputborder"
+                    android:fontFamily="@font/biryani"
+                    android:gravity="left|center"
+                    android:hint="ENTER YOUR EXPERIENCE"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/biryani"
+                    android:text="SKILL's"
+                    android:textColor="#BA3D5AFE"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <CheckBox
+                        android:id="@+id/cbLEADERHIP"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/biryani"
+                        android:text="LEADERHIP" />
+
+                    <CheckBox
+                        android:id="@+id/cbCODDING"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/biryani"
+                        android:text="CODDING" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <CheckBox
+                        android:id="@+id/cbLEARNING_skill"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/biryani"
+                        android:text="LEARNING" />
+
+                    <CheckBox
+                        android:id="@+id/cbUSER_INTERFACE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/biryani"
+                        android:text="USER INTERFACE" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <CheckBox
+                        android:id="@+id/cbTEAM_WORK"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/biryani"
+                        android:text="TEAM WORK" />
+
+                    <CheckBox
+                        android:id="@+id/cbCOMMMUNICATE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/biryani"
+                        android:text="COMMMUNICATE" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/biryani"
+                    android:shadowColor="#E4304FFE"
+                    android:text="SUBMIT"
+                    android:textColor="#E9FFFFFF"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

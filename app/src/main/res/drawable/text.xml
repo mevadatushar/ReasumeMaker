@@ -1,0 +1,21 @@
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+        android:color="#E8CFC1">
+    </solid>
+
+    <stroke
+        android:width="1dp"
+        android:color="#E8CFC1">
+    </stroke>
+    <corners
+
+        android:topLeftRadius="10dp"
+        android:topRightRadius="100dp"
+        >
+    </corners>
+</shape>
+
+
+
+    <!--android:background="@drawable/linearlayoutbox"-->
